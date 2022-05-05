@@ -1,0 +1,48 @@
+﻿@model APIRaft.Data.Raft
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Raft</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RaftName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RaftName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RaftDetails)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RaftDetails)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RaftPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RaftPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RaftImage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RaftImage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RaftBusiness)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RaftBusiness.BusinessId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RaftId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

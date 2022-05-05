@@ -1,0 +1,97 @@
+﻿{
+  "CodeGenerationMode": 0,
+  "ContextClassName": "RaftpjContext",
+  "ContextNamespace": null,
+  "DefaultDacpacSchema": null,
+  "FilterSchemas": false,
+  "IncludeConnectionString": false,
+  "ModelNamespace": "Data",
+  "OutputContextPath": null,
+  "OutputPath": "Models",
+  "ProjectRootNamespace": "APIRaft",
+  "Schemas": null,
+  "SelectedHandlebarsLanguage": 0,
+  "SelectedToBeGenerated": 0,
+  "Tables": [
+    {
+      "Name": "[dbo].[Activity]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Admin]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Business]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[DetailServices]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Map]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Order]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[OrderDetails]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[OrderServices]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Promotion]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Raft]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Services]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[StatusBusiness]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[StatusOrder]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[StatusPromotion]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[User]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[ViewRafts]",
+      "ObjectType": 3
+    }
+  ],
+  "UiHint": "LAPTOP-CLN64NPU\\SQLEXPRESS.RaftPJ",
+  "UseBoolPropertiesWithoutDefaultSql": false,
+  "UseDatabaseNames": false,
+  "UseDbContextSplitting": false,
+  "UseFluentApiOnly": true,
+  "UseHandleBars": false,
+  "UseInflector": false,
+  "UseLegacyPluralizer": false,
+  "UseNoConstructor": false,
+  "UseNoDefaultConstructor": false,
+  "UseNoNavigations": false,
+  "UseNoObjectFilter": false,
+  "UseNodaTime": false,
+  "UseNullableReferences": false,
+  "UseSchemaFolders": false,
+  "UseSpatial": false
+}

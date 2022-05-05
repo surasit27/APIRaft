@@ -1,0 +1,59 @@
+﻿@model IEnumerable<APIRaft.Data.Raft>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RaftName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RaftDetails)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RaftPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RaftImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RaftBusiness)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RaftName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RaftDetails)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RaftPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RaftImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RaftBusiness.BusinessId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RaftId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RaftId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RaftId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
